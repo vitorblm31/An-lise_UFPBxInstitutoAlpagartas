@@ -53,13 +53,40 @@ Em seguida, instale as dependências com:
 
 ```bash
 pip install streamlit pandas altair numpy
+```
+---
+
+## 📂 Estrutura do Projeto
+
+📦 ideb-paraiba
+┣ 📜 app.py # Código principal da aplicação
+┣ 📊 IA (1).csv # Arquivo CSV com os dados (editar caminho conforme necessário)
+┗ 📄 README.md # Documentação do projeto
 
 ---
 
-## Para rodar o app
-Insira 'streamlit run app.py' no terminal.
+## 🧹 Limpeza e Padronização dos Dados
+
+Durante o carregamento, o código:
+
+Remove espaços e pontos nas colunas numéricas.
+
+Substitui valores ausentes por 0.
+
+Converte colunas de IDEB para tipo numérico.
+
+Garante que os dados estejam consistentes antes da análise.
+
+---
+## ▶️ Como Executar o Projeto
+
+Coloque o arquivo de dados (IA (1).csv) no caminho indicado dentro do código ou ajuste o caminho no load_data().
+
+Execute o aplicativo com:
+
+streamlit run app.py
 
 
+Acesse no navegador o link exibido no terminal (geralmente http://localhost:8501).
 
-## 📂 Estrutura do Projeto
 
