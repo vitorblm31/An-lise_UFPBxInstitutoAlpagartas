@@ -56,7 +56,8 @@ pip install streamlit pandas altair numpy
 
 ---
 
-Para rodar o app, insira 'streamlit run app.py' no terminal.
+## Para rodar o app
+Insira 'streamlit run app.py' no terminal.
 
 
 
