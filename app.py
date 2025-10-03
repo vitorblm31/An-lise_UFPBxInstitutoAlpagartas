@@ -15,7 +15,7 @@ st.title("📊 Evolução do IDEB e Indicadores nos municípios da Paraíba")
 @st.cache_data
 def load_data():
     # Usando caminho relativo para portabilidade
-    df = pd.read_csv(r"C:/Users/PESSOAL/Documents/ufpb/projetos/IA (1).csv")
+    df = pd.read_csv("IA (1).csv")
     for col in ["Instituições_20", "Projetos_20", "Beneficiados_20",
                 "Instituições_23", "Projetos_23", "Beneficiados_23"]:
         df[col] = (
@@ -259,4 +259,5 @@ with tab5:
                          .format({'IDEB Inicial': '{:.2f}', 'IDEB Final': '{:.2f}', 'Evolução (%)': '{:.2f}%'}),
         use_container_width=True,
         height=600
+
     )
